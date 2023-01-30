@@ -5,11 +5,11 @@ import { Contact } from '../Ejercicio Bootcamp 1 (React)/Contact.class'
 const ContactComponent = ({contact}) => {
   return(<div>
     {/* The && → This sign when the prop is empty show the modal without message (the other way without && show an error)  */}
-    <h3>First Name: {contact._firstName && contact._firstName}</h3>
-    <h3>Last Name: {contact._lastName && contact._lastName}</h3>
-    <h3>Email: {contact._email && contact._email}</h3>
+    <h5>First Name: {contact._firstName && contact._firstName}</h5>
+    <h5>Last Name: {contact._lastName && contact._lastName}</h5>
+    <h5>Email: {contact._email && contact._email}</h5>
     {/* The string change depends the state */}
-    <h4>Status{contact._connected ? "🟢" : "🔴"}</h4>
+    <h6>Status{contact._connected ? "🟢" : "🔴"}</h6>
   </div>)
 }
 
