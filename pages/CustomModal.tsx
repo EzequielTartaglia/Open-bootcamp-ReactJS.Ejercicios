@@ -70,7 +70,8 @@ const CustomModal: React.FunctionComponent<{ customMessage: string, onConfirm: (
                         minWidth: '60%',
                         padding: '10px 1.5rem 0 1.5rem',
                         height: '40px'
-                    }}>{customMessage}</p>
+                        /* This sign when the prop is empty show the modal without message (the other way without && show an error) */
+                    }}>{customMessage && customMessage}</p>
 
                     <div style={{
                         display: 'flex',
@@ -159,7 +160,7 @@ const CustomModal: React.FunctionComponent<{ customMessage: string, onConfirm: (
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
-                        fontSize: '1.4rem',
+                        fontSize: '1rem',
                         minWidth: '60%',
                         padding: '10px 1.5rem 0 1.5rem',
                         height: '40px'
